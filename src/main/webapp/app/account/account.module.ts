@@ -1,21 +1,18 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { DesafioSharedModule } from 'app/shared';
-
-import {
-  PasswordStrengthBarComponent,
-  RegisterComponent,
-  ActivateComponent,
-  PasswordComponent,
-  PasswordResetInitComponent,
-  PasswordResetFinishComponent,
-  SettingsComponent,
-  accountState
-} from './';
+import { SharedModule } from 'app/shared/shared.module';
+import { PasswordStrengthBarComponent } from './password/password-strength-bar/password-strength-bar.component';
+import { RegisterComponent } from './register/register.component';
+import { ActivateComponent } from './activate/activate.component';
+import { PasswordComponent } from './password/password.component';
+import { PasswordResetInitComponent } from './password-reset/init/password-reset-init.component';
+import { PasswordResetFinishComponent } from './password-reset/finish/password-reset-finish.component';
+import { SettingsComponent } from './settings/settings.component';
+import { accountState } from './account.route';
 
 @NgModule({
-  imports: [DesafioSharedModule, RouterModule.forChild(accountState)],
+  imports: [SharedModule, RouterModule.forChild(accountState)],
   declarations: [
     ActivateComponent,
     RegisterComponent,
@@ -23,8 +20,7 @@ import {
     PasswordStrengthBarComponent,
     PasswordResetInitComponent,
     PasswordResetFinishComponent,
-    SettingsComponent
+    SettingsComponent,
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class DesafioAccountModule {}
+export class AccountModule {}

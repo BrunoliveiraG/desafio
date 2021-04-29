@@ -4,7 +4,7 @@
       "packageName": "com.inpa.desafio",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "6.1.2",
+    "jhipsterVersion": "7.0.1",
     "applicationType": "monolith",
     "baseName": "desafio",
     "packageName": "com.inpa.desafio",
@@ -28,18 +28,24 @@
     "clientFramework": "angularX",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "testFrameworks": [
-      "protractor"
-    ],
+    "testFrameworks": ["protractor"],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": [
-      "en",
-      "pt-br"
-    ]
+    "languages": ["en", "pt-br"],
+    "skipUserManagement": false,
+    "withAdminUi": true,
+    "skipClient": false,
+    "skipServer": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "blueprints": [],
+    "pages": [],
+    "reactive": false,
+    "creationTimestamp": 1619717038206,
+    "entities": []
   }
 }

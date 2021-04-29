@@ -26,7 +26,6 @@
         "health": "Estado do Sistema",
         "configuration": "Configuração",
         "logs": "Logs",
-        "audits": "Auditorias",
         "apidocs": "API",
         "database": "Banco de dados",
         "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
@@ -69,7 +68,7 @@
         },
         "confirmpassword": {
           "required": "A confirmação da senha é obrigatória.",
-          "minlength": "A confirmação da senha deve ter pelo menos 5 caracteres",
+          "minlength": "A confirmação da senha deve ter pelo menos 4 caracteres",
           "maxlength": "A confirmação da senha não pode ter mais de 50 caracteres"
         },
         "email": {
@@ -130,7 +129,13 @@
     "userexists": "Usuário já está cadastrado!",
     "emailexists": "E-mail já está cadastrado!",
     "idexists": "Novo(a) {{entityName}} não pode ter um identificador",
-    "idnull": "Identificador inválido"
+    "idnull": "Identificador inválido",
+    "idinvalid": "Invalid Id",
+    "idnotfound": "ID cannot be found",
+    "file": {
+      "could.not.extract": "Could not extract file",
+      "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
+    }
   },
   "footer": "Este é o rodapé da página"
 }
