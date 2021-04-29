@@ -4,7 +4,7 @@
       "packageName": "com.inpa.desafio",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "7.0.1",
+    "jhipsterVersion": "6.1.2",
     "applicationType": "monolith",
     "baseName": "desafio",
     "packageName": "com.inpa.desafio",
@@ -36,16 +36,8 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": ["en", "pt-br"],
-    "skipUserManagement": false,
-    "withAdminUi": true,
-    "skipClient": false,
-    "skipServer": false,
-    "skipCheckLengthOfIdentifier": false,
-    "skipFakeData": false,
     "blueprints": [],
-    "pages": [],
-    "reactive": false,
-    "creationTimestamp": 1619717038206,
-    "entities": []
+    "entities": ["Blog", "Entry", "Tag"],
+    "lastLiquibaseTimestamp": 1619718061000
   }
 }

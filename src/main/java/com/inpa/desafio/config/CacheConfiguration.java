@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, com.inpa.desafio.domain.User.class.getName());
             createCache(cm, com.inpa.desafio.domain.Authority.class.getName());
             createCache(cm, com.inpa.desafio.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.inpa.desafio.domain.Blog.class.getName());
+            createCache(cm, com.inpa.desafio.domain.Entry.class.getName());
+            createCache(cm, com.inpa.desafio.domain.Entry.class.getName() + ".tags");
+            createCache(cm, com.inpa.desafio.domain.Tag.class.getName());
+            createCache(cm, com.inpa.desafio.domain.Tag.class.getName() + ".entries");
             // jhipster-needle-ehcache-add-entry
         };
     }
