@@ -1,0 +1,11 @@
+version: '2'
+services:
+  desafio-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/desafio/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=desafio
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
